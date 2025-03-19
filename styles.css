@@ -95,5 +95,29 @@ img {
     color: var(--grey500);
 }
 
+@media (max-width: 1000px) {
 
+    body {
+        width: 90vw;
+        height: fit-content;
+        overflow-y: scroll;
+        margin: 50px 30px;
+    }
 
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+            "d"
+            "d"
+            "j"
+            "h"
+            "p"
+            "p"
+            "k"
+            "k";
+        gap: 25px;
+        width: 1050px;
+    }
+}
